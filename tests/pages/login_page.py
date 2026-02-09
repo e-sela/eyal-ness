@@ -36,4 +36,7 @@ class LoginPage:
         self.page.wait_for_timeout(3000)
         self.page.locator(self.identity).hover()
         user_link = self.page.locator(self.identity_dialog_user).first
+        self.page.press("body", "Escape")
         assert userId in user_link.inner_text()
+        
+        
