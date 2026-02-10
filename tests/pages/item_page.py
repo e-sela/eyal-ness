@@ -17,7 +17,6 @@ class ItemPage:
             self.page.wait_for_selector(self.add_to_cart_btn[0], timeout=15000)
             LocatorUtil(self.page).click_first_available(self.add_to_cart_btn)
             self.click_see_in_cart()
-        self.page.pause()  # Pause for debugging if needed    
     
     @allure.step("Click 'See in cart' if present")
     def click_see_in_cart(self):

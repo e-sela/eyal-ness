@@ -1,15 +1,18 @@
-2026-02-10 14:18:28,523 - tests.utils.locator_util - INFO - Successfully clicked selector: .gh-identity a:has-text('Sign in')
-2026-02-10 14:18:31,748 - tests.utils.locator_util - INFO - Successfully clicked selector: #signin-continue-btn
-2026-02-10 14:18:41,658 - tests.utils.locator_util - INFO - Successfully clicked selector: #sgnBt
-2026-02-10 14:18:46,596 - tests.utils.locator_util - INFO - Successfully clicked selector: #gh-search-btn
-2026-02-10 14:18:50,648 - tests.utils.locator_util - INFO - Successfully clicked selector: .srp-view-options .fake-menu-button__button
-2026-02-10 14:18:54,012 - tests.pages.search_page - INFO - Item 1: price=12.99
-2026-02-10 14:18:55,113 - tests.pages.search_page - INFO - Added item 1 URL: https://www.ebay.com/itm/198004832925?_skw=frozen+lego+duplo&itmmeta=01KH3QTYQP42909QZYEY00TQ2Z&hash=item2e1a01fa9d:g:-zQAAeSwscJpWT0R&itmprp=enc%3AAQALAAAA0GfYFPkwiKCW4ZNSs2u11xCHs6hMZNpG681B8hEV4DPWhrUpARjyvmWemzuumIc7RcF2vMXz5%2FviUKzS9GMnl7LSHgIa66PqPqiX1X%2Fuv80MDhPthHHbJJ9vrukoBH1DT44n09X46r1eaHuHv5LTtdgyI1EWXPw%2FByJcV4s9SUemW7Lr%2FlzQk02tM62SP%2FsTC3n%2FfiBHLEou1uqcf%2FW0f7%2BJCRsmpMQ050nm9FDiluniEjanurqR8BVkiJu1hurwVShfx1NeC6NGxap4C2cgH%2BI%3D%7Ctkp%3ABk9SR4Ds6_eIZw, price: $12.99
-2026-02-10 14:18:55,122 - tests.pages.search_page - INFO - Item 2: price=9.58
-2026-02-10 14:18:56,133 - tests.pages.search_page - INFO - Added item 2 URL: https://www.ebay.com/itm/274342091675?_skw=frozen+lego+duplo&epid=17042037599&itmmeta=01KH3QTYQPC7DMZV2FYJ1TP4Z9&hash=item3fe0101b9b:g:ZEIAAOSweLZenO5Q&itmprp=enc%3AAQALAAAA0GfYFPkwiKCW4ZNSs2u11xA2AKmlp8TTFU%2F6gj00Ph%2FtAOpWvwBkYqqpgRQ09EYUzTamn%2FhuH1xjPl3rkUb7ZwnZtgpmYZe1t9XZG3XrRA%2FOPQiM81eDkW7IvrqRfb4N33nhQoQjjXtBrOk8E9KhtBmOLB1F8HUxw4aTJnLy02FlYsir9RkR9LGWxtEmLXMyDCd82c%2FrLJFH5JNPiH%2BZ4Dh3oPt8gGA8TcJIRORXqUQqN0V39ZWUov3FFOs3kfRkgtvNHUx8mpLJRovFoe3P5Lw%3D%7Ctkp%3ABk9SR4Ds6_eIZw, price: $9.58
-2026-02-10 14:18:56,139 - tests.pages.search_page - INFO - Item 3: price=9.99
-2026-02-10 14:18:57,025 - tests.pages.search_page - INFO - Added item 3 URL: https://www.ebay.com/itm/227187626825?_skw=frozen+lego+duplo&epid=17042037599&itmmeta=01KH3QTYQPGTGRSJC524GNA158&hash=item34e5701349:g:lAsAAeSwhd9pdUIs&itmprp=enc%3AAQALAAAA8GfYFPkwiKCW4ZNSs2u11xBkyx840hhmljP8zehrkBqlwmrGj%2Btx%2BTIPZk1GwCu1TGYh9O0GI4OKOc02JtweVTTLXEe8gRc3v%2Fx7tmbf1cfECa1HvJM8md%2FcTcVvCedMQhn%2BCH2DvGlSOJshyzsNfa8yEe%2FI4kLEUX9NYoRIw9wLNs3j0naIXOqeBgU7rmp2kBycPzr9rblRufZvlt4WM3fhoGAPe7v5mpA8D3l3XSf6Dp6eCuxXqnQE9I3gsxr7wRDPpur58kv2xbIOpm9S%2BEZziwWgK%2FCuevEMqd4Nz%2BMPj5pejV8t23mqMPgblyNiGw%3D%3D%7Ctkp%3ABk9SR4Ds6_eIZw, price: $9.99
-2026-02-10 14:19:01,759 - tests.utils.locator_util - INFO - Successfully clicked selector: #atcBtn_btn_1
-2026-02-10 14:19:05,033 - tests.utils.locator_util - INFO - Successfully clicked selector: #atcBtn_btn_1
-2026-02-10 14:19:08,737 - tests.utils.locator_util - INFO - Successfully clicked selector: #atcBtn_btn_1
-2026-02-10 14:19:22,014 - tests.pages.cart_page - INFO - All items deleted from cart
+2026-02-10 15:07:45,252 - tests.utils.locator_util - INFO - Successfully clicked selector: .gh-identity a:has-text('Sign in')
+2026-02-10 15:07:48,725 - tests.utils.locator_util - INFO - Successfully clicked selector: #signin-continue-btn
+2026-02-10 15:07:51,762 - tests.utils.locator_util - INFO - Successfully clicked selector: #sgnBt
+2026-02-10 15:07:56,244 - tests.utils.locator_util - INFO - Successfully clicked selector: #gh-search-btn
+2026-02-10 15:07:58,732 - tests.utils.locator_util - INFO - Successfully clicked selector: .srp-view-options .fake-menu-button__button
+2026-02-10 15:08:05,533 - tests.pages.search_page - INFO - Item 1: price=8.0
+2026-02-10 15:08:06,370 - tests.pages.search_page - INFO - Added item 1 URL: https://www.ebay.com/itm/134566638385?_skw=frozen+lego+duplo&itmmeta=01KH3TMZ4W398QXCRTA9GYNZ5R&hash=item1f54cbf331:g:AHoAAOSw81tkW1FM, price: $8.00
+2026-02-10 15:08:06,378 - tests.pages.search_page - INFO - Item 2: price=3.99
+2026-02-10 15:08:07,341 - tests.pages.search_page - INFO - Added item 2 URL: https://www.ebay.com/itm/157644299901?_skw=frozen+lego+duplo&itmmeta=01KH3TMZ4WT6MSYG0582E26C59&hash=item24b4551e7d:g:SgUAAeSweLhpeou~, price: $3.99
+2026-02-10 15:08:07,348 - tests.pages.search_page - INFO - Item 3: price=8.2
+2026-02-10 15:08:08,474 - tests.pages.search_page - INFO - Added item 3 URL: https://www.ebay.com/itm/157614098402?_skw=frozen+lego+duplo&itmmeta=01KH3TMZ4WES9HKG2G10QPCRVH&hash=item24b28847e2:g:1kYAAeSwTyFpZ9B-, price: $8.20
+2026-02-10 15:08:13,637 - tests.utils.locator_util - INFO - Successfully clicked selector: #atcBtn_btn_1
+2026-02-10 15:08:18,399 - tests.utils.locator_util - INFO - Successfully clicked selector: #atcBtn_btn_1
+2026-02-10 15:08:22,132 - tests.utils.locator_util - INFO - Successfully clicked selector: #atcBtn_btn_1
+2026-02-10 15:08:23,625 - tests.pages.cart_page - INFO - Subtotal: $66.39, Shipping: $21.84, Cart total: $44.55, Max allowed: $20.19
+2026-02-10 15:08:24,406 - tests.pages.cart_page - INFO - the total actual $44.55 the tottal expected $20.19
+2026-02-10 15:08:24,406 - tests.pages.cart_page - ERROR - Cart total $44.55 exceeds expected maximum $20.19. Screenshot saved to cart_total_44.png
+2026-02-10 15:08:31,102 - tests.pages.cart_page - INFO - All items deleted from cart
