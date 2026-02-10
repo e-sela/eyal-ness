@@ -5,7 +5,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 from tests.utils.locator_util import LocatorUtil
 
 from playwright.sync_api import Page
-from ..utils.price_parser import parse_price
+from ..utils.price_parser import parsePrice
 import logging
 import allure
 
@@ -25,11 +25,12 @@ class SearchPage:
     @allure.step("Search items by name under price")
     def searchItemsByNameUnderPrice(self, search_text: str, max_price: int = None, limit: int = 5) -> tuple[list[str], float]:
         self.page.fill(self.search_input, search_text)
-        self.locator_util.click_first_available(self.search_btn)
+        self.locator_util.clickFirstAvailable(self.search_btn)
         self.page.wait_for_selector(self.card, timeout=10000)
         if max_price:
             self.page.get_by_label("Maximum value").fill(str(max_price))
             self.page.get_by_label("Maximum value").press("Enter")
+            self.page.wait_for_load_state("networkidle")
         self.setView()
         itamUrls: list[str] = []
         totalPrice: float = 0.0
@@ -38,7 +39,7 @@ class SearchPage:
         for i in range(count):
             item = cards.nth(i)
             price_text = item.locator(".s-card__price").inner_text()
-            price_value = parse_price(price_text)
+            price_value = parsePrice(price_text)
             logger.info(f"Item {i+1}: price={price_value}")
             if price_value > max_price:
                 logger.error(f"Item {i+1} price ${price_value} exceeds max price ${max_price}")
@@ -59,15 +60,12 @@ class SearchPage:
     
     @allure.step("Set search results view")
     def setView(self) -> None:
-        # Wait for the view options button to be visible and enabled
         self.page.wait_for_selector(self.view_options_btn[0], state="visible", timeout=5000)
-        self.locator_util.click_first_available(self.view_options_btn)
-        # Wait for the Gallery View span to be attached and visible
+        self.locator_util.clickFirstAvailable(self.view_options_btn)
         gallery_view_span = self.page.locator(".fake-menu-button__item span", has_text="Gallery View")
         gallery_view_span.wait_for(state="visible", timeout=5000)
         if gallery_view_span.count() > 0:
             gallery_view_span.first.click()
-            # Wait for the page to load after clicking Gallery View
             self.page.wait_for_load_state("networkidle")
         
         

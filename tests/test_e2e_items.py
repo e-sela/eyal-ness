@@ -21,4 +21,4 @@ def test_e2e_add_and_filter_items(page: Page, ebay_user_id: str):
     item = ItemPage(page)
     item.addItemsToCart(items)
     cart = CartPage(page)
-    cart.assert_cart_total_not_exceeds(total_price)
+    cart.assertCartTotalNotExceeds(total_price)

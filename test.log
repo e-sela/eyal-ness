@@ -1,18 +1,18 @@
-2026-02-10 15:07:45,252 - tests.utils.locator_util - INFO - Successfully clicked selector: .gh-identity a:has-text('Sign in')
-2026-02-10 15:07:48,725 - tests.utils.locator_util - INFO - Successfully clicked selector: #signin-continue-btn
-2026-02-10 15:07:51,762 - tests.utils.locator_util - INFO - Successfully clicked selector: #sgnBt
-2026-02-10 15:07:56,244 - tests.utils.locator_util - INFO - Successfully clicked selector: #gh-search-btn
-2026-02-10 15:07:58,732 - tests.utils.locator_util - INFO - Successfully clicked selector: .srp-view-options .fake-menu-button__button
-2026-02-10 15:08:05,533 - tests.pages.search_page - INFO - Item 1: price=8.0
-2026-02-10 15:08:06,370 - tests.pages.search_page - INFO - Added item 1 URL: https://www.ebay.com/itm/134566638385?_skw=frozen+lego+duplo&itmmeta=01KH3TMZ4W398QXCRTA9GYNZ5R&hash=item1f54cbf331:g:AHoAAOSw81tkW1FM, price: $8.00
-2026-02-10 15:08:06,378 - tests.pages.search_page - INFO - Item 2: price=3.99
-2026-02-10 15:08:07,341 - tests.pages.search_page - INFO - Added item 2 URL: https://www.ebay.com/itm/157644299901?_skw=frozen+lego+duplo&itmmeta=01KH3TMZ4WT6MSYG0582E26C59&hash=item24b4551e7d:g:SgUAAeSweLhpeou~, price: $3.99
-2026-02-10 15:08:07,348 - tests.pages.search_page - INFO - Item 3: price=8.2
-2026-02-10 15:08:08,474 - tests.pages.search_page - INFO - Added item 3 URL: https://www.ebay.com/itm/157614098402?_skw=frozen+lego+duplo&itmmeta=01KH3TMZ4WES9HKG2G10QPCRVH&hash=item24b28847e2:g:1kYAAeSwTyFpZ9B-, price: $8.20
-2026-02-10 15:08:13,637 - tests.utils.locator_util - INFO - Successfully clicked selector: #atcBtn_btn_1
-2026-02-10 15:08:18,399 - tests.utils.locator_util - INFO - Successfully clicked selector: #atcBtn_btn_1
-2026-02-10 15:08:22,132 - tests.utils.locator_util - INFO - Successfully clicked selector: #atcBtn_btn_1
-2026-02-10 15:08:23,625 - tests.pages.cart_page - INFO - Subtotal: $66.39, Shipping: $21.84, Cart total: $44.55, Max allowed: $20.19
-2026-02-10 15:08:24,406 - tests.pages.cart_page - INFO - the total actual $44.55 the tottal expected $20.19
-2026-02-10 15:08:24,406 - tests.pages.cart_page - ERROR - Cart total $44.55 exceeds expected maximum $20.19. Screenshot saved to cart_total_44.png
-2026-02-10 15:08:31,102 - tests.pages.cart_page - INFO - All items deleted from cart
+2026-02-10 16:52:01,661 - tests.utils.locator_util - INFO - Successfully clicked selector: .gh-identity a:has-text('Sign in')
+2026-02-10 16:52:05,212 - tests.utils.locator_util - INFO - Successfully clicked selector: #signin-continue-btn
+2026-02-10 16:52:20,704 - tests.utils.locator_util - INFO - Successfully clicked selector: #sgnBt
+2026-02-10 16:52:26,070 - tests.utils.locator_util - INFO - Successfully clicked selector: #gh-search-btn
+2026-02-10 16:52:32,866 - tests.utils.locator_util - INFO - Successfully clicked selector: .srp-view-options .fake-menu-button__button
+2026-02-10 16:52:36,936 - tests.pages.search_page - INFO - Item 1: price=14.99
+2026-02-10 16:52:38,176 - tests.pages.search_page - INFO - Added item 1 URL: https://www.ebay.com/itm/117026684019?_skw=frozen+lego+duplo&itmmeta=01KH40MCKPQCEM6Y8GR03X9SNV&hash=item1b3f557c73:g:eCMAAeSwCqBo~M16&itmprp=enc%3AAQALAAAA0GfYFPkwiKCW4ZNSs2u11xAxFkgy%2FML7rpbEYmF4bQhl5mWmX1jkjXR4YHvXHdEHZJ6zFjm999L43jiwrmcaQGwp2nnWlMAe5vH6AYKIRdJLtemynkRzvUkP0KodqbN%2BqANo0SnRwMhEUmWpX4TGltHlGeZ7GTRiiCnyjJe0fFb0Ku9mt1neaZ83xu8ksINY80%2BJpOAvXvsa22UKXi3oRdODZg4gL3AgEXDsoRZJUusR5epjY%2BFpqo5UUOq%2F0ZgxP1%2FmgMrrtBaJ%2FIRszBaalsM%3D%7Ctkp%3ABk9SR_7J0YCJZw, price: $14.99
+2026-02-10 16:52:38,185 - tests.pages.search_page - INFO - Item 2: price=12.99
+2026-02-10 16:52:39,148 - tests.pages.search_page - INFO - Added item 2 URL: https://www.ebay.com/itm/198004832925?_skw=frozen+lego+duplo&itmmeta=01KH40MCKPGY63EZ9BM4D3N4ZC&hash=item2e1a01fa9d:g:-zQAAeSwscJpWT0R&itmprp=enc%3AAQALAAAA0GfYFPkwiKCW4ZNSs2u11xCHs6hMZNpG681B8hEV4DPWhrUpARjyvmWemzuumIc7RbhdFEO4sZ0iYVZEYADMSGu9%2FMkEqEXwyCHeoAh0ota1F1U7Dtog6VC3Hm6zDgbxJhUDOcKNPLmerHJjKuAX4YCZBM6hGbSPBKkP7nejvVUaxg1Du2ypUBt7CkOQQI6ApEEBaTV3qDWDmovxosX9FaMldDC6Vxd1MDOq6ziaIP%2BxTXRUlihuAwIDZ7U69kjJIrCDNsR5Gp44Wdwfw%2FcU810%3D%7Ctkp%3ABk9SR_7J0YCJZw, price: $12.99
+2026-02-10 16:52:39,156 - tests.pages.search_page - INFO - Item 3: price=5.99
+2026-02-10 16:52:40,049 - tests.pages.search_page - INFO - Added item 3 URL: https://www.ebay.com/itm/127659093450?_skw=frozen+lego+duplo&itmmeta=01KH40MCKP1FHT2FYWTRMGK5F1&hash=item1db9132dca:g:9VMAAOSw1tdiAu29&itmprp=enc%3AAQALAAAA0GfYFPkwiKCW4ZNSs2u11xA8SiSE%2F84%2BupA6s1mbgCsI5Xt74AuLA0Oce0xEjMymveaxgAUw1GMmJFhG9SZXoi5MHCtyg4iJK1aqjYAB2dCD7d2FZQhpvzeIy6wVimHEOxIMQmNtzZAIyoD8ZEuFf8zcHq%2FKSodYrUEDk6tuJeI%2F1oj65AQ4FT%2FSVJp59L14my9TvgeFEDiMQDJGC1NB0M5e7h6NaTdt5gahA4%2Bp4nK2PTZGE0TJHxwe25vEw9jt4ckbKdKybp991%2FmFhnfrxQg%3D%7Ctkp%3ABk9SR_7J0YCJZw, price: $5.99
+2026-02-10 16:52:49,052 - tests.utils.locator_util - INFO - Successfully clicked selector: #atcBtn_btn_1
+2026-02-10 16:52:53,207 - tests.utils.locator_util - INFO - Successfully clicked selector: #atcBtn_btn_1
+2026-02-10 16:52:57,409 - tests.utils.locator_util - INFO - Successfully clicked selector: #atcBtn_btn_1
+2026-02-10 16:53:00,162 - tests.pages.cart_page - INFO - Subtotal: $40.22, Shipping: $6.25, Cart total: $33.97, Max allowed: $33.97
+2026-02-10 16:53:00,700 - tests.pages.cart_page - INFO - the total actual $33.97 the tottal expected $33.97
+2026-02-10 16:53:00,700 - tests.pages.cart_page - INFO - Cart total $33.97 equals the maximum allowed $33.97. Screenshot saved to cart_total_33.png. Assertion passed.
+2026-02-10 16:53:04,057 - tests.pages.cart_page - INFO - All items deleted from cart

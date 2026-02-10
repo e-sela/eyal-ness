@@ -23,17 +23,17 @@ class LoginPage:
 
     @allure.step("Open sign-in form")
     def open_signin(self):
-        self.locator_util.click_first_available(self.sign_in_link)
+        self.locator_util.clickFirstAvailable(self.sign_in_link)
         self.page.wait_for_timeout(3000)
         self.page.wait_for_selector(self.userid, timeout=15000)
 
     @allure.step("Login with username and password")
     def login(self, username: str, password: str):
         self.page.fill(self.userid, username)
-        self.locator_util.click_first_available(self.continue_btn)
+        self.locator_util.clickFirstAvailable(self.continue_btn)
         self.page.wait_for_selector(self.password, timeout=15000)
         self.page.fill(self.password, password)
-        self.locator_util.click_first_available(self.signin_btn)
+        self.locator_util.clickFirstAvailable(self.signin_btn)
 
     @allure.step("Sign in with username and password")
     def sign_in(self, username: str, password: str):

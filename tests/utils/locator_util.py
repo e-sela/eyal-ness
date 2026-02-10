@@ -16,7 +16,7 @@ class LocatorUtil:
         self.page = page
 
     @allure.step("Click first available selector")
-    def click_first_available(self, selectors: List[str], timeout: int = 500) -> None:
+    def clickFirstAvailable(self, selectors: List[str], timeout: int = 500) -> None:
         for sel in selectors:
             locator = self.page.locator(sel)
             try:

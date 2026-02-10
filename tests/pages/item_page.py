@@ -15,7 +15,7 @@ class ItemPage:
             self.page.goto(link)
             self.page.wait_for_load_state("networkidle")
             self.page.wait_for_selector(self.add_to_cart_btn[0], timeout=15000)
-            LocatorUtil(self.page).click_first_available(self.add_to_cart_btn)
+            LocatorUtil(self.page).clickFirstAvailable(self.add_to_cart_btn)
             self.click_see_in_cart()
     
     @allure.step("Click 'See in cart' if present")

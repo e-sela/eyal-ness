@@ -1,7 +1,7 @@
 
 from playwright.sync_api import Page
 from ..urls import Urls
-from ..utils.price_parser import parse_price
+from ..utils.price_parser import parsePrice
 import logging
 import allure
 
@@ -23,20 +23,21 @@ class CartPage:
     @allure.step("Get item prices from cart")
     def get_item_prices(self) -> float:
         total_text = self.page.locator(self.subtotal_selector).inner_text()
-        return parse_price(total_text)
+        return parsePrice(total_text)
 
     @allure.step("Get shipping price from cart")
-    def get_shipping_price(self) -> float:
+    def getShippingPrice(self) -> float:
         if self.page.locator(self.shipping_selector).count() == 0:
             return 0.0
         shipping_text = self.page.locator(self.shipping_selector).inner_text()
-        return parse_price(shipping_text)
+        return parsePrice(shipping_text)
 
     @allure.step("Assert cart total does not exceed maximum allowed")
-    def assert_cart_total_not_exceeds(self, max_total: float) -> None:
+    def assertCartTotalNotExceeds(self, max_total: float) -> None:
         self.goto()
+        self.page.reload()
         subtotal = self.get_item_prices()
-        shipping = self.get_shipping_price()
+        shipping = self.getShippingPrice()
         total_sum = subtotal - shipping
         total_sum = round(total_sum, 2)
         logger.info(f"Subtotal: ${subtotal:.2f}, Shipping: ${shipping:.2f}, Cart total: ${total_sum:.2f}, Max allowed: ${max_total:.2f}")
