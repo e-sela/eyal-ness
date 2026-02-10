@@ -11,11 +11,13 @@ class SearchPage:
         self.search_input = "#gh-ac"
         self.search_btn = "#gh-search-btn"
         self.card = ".s-card[id^='item']"
+        self.view_options_btn = ".srp-view-options .fake-menu-button__button"
+        self.lightbox_dialog = ".lightbox-dialog__window"
 
     def searchItemsByNameUnderPrice(self, search_text: str, max_price: int = None, limit: int = 5) -> tuple[list[str], float]:
         self.page.fill(self.search_input, search_text)
         self.page.click(self.search_btn)
-
+        self.setView()
         if max_price:
             self.page.get_by_label("Maximum value").fill(str(max_price))
             self.page.get_by_label("Maximum value").press("Enter")
@@ -43,4 +45,17 @@ class SearchPage:
                 itamUrls.append(itamUrl)
                 totalPrice += price_value
 
-        return itamUrls, totalPrice
+        return itamUrls, round(totalPrice, 2)
+    
+    def setView(self) -> None:
+        """Set the search results view to the specified view name (e.g. 'List', 'Gallery')."""
+        self.convertPricesToUSD()
+    
+    def convertPricesToUSD(self) -> None:
+        """Click view options, verify dialog appears, and check 'Convert prices to USD' if not already checked."""
+        self.page.locator(self.view_options_btn).click()
+        self.page.get_by_label("Customize").click()
+        self.page.get_by_test_id("cust_fcpd-1").set_checked(False)
+        
+            
+        

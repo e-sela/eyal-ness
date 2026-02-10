@@ -1,4 +1,5 @@
 import pytest
+from .pages.cart_page import CartPage
 
 @pytest.fixture(scope="session")
 def browser_context_args(browser_context_args):
@@ -14,3 +15,13 @@ def pytest_configure(config):
 @pytest.fixture
 def ebay_user_id():
     return "es34-4529"
+
+@pytest.fixture(autouse=True)
+def cleanup_cart(page):
+    """Auto cleanup cart after each test"""
+    yield
+    cart = CartPage(page)
+    try:
+        cart.deleteAll()
+    except Exception:
+        pass
