@@ -1,0 +1,12 @@
+# Ignore Allure results directory
+allure-results/
+allure-report/
+*.txt
+*.csv
+__pycache__/
+*.pyc
+/*.png
+
+# Ignore Python cache directory
+__pycache__/
+*.pyc

@@ -1,5 +1,7 @@
 import re
+import allure
 
+@allure.step("Parse price from text: {text}")
 def parse_price(text: str) -> float:
     """Extract numeric value from price strings like 'ILS 49.60', '$49.60', '49.60'."""
     if not text:

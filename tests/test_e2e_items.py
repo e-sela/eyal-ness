@@ -17,7 +17,7 @@ def test_e2e_add_and_filter_items(page: Page, ebay_user_id: str):
     login.sign_in(USERNAME, PASSWORD)
     login.verify_user_id(ebay_user_id)
     search = SearchPage(page)
-    items, total_price = search.searchItemsByNameUnderPrice("lego star wars", max_price=50, limit=3)
+    items, total_price = search.searchItemsByNameUnderPrice("frozen lego duplo", max_price=50, limit=3)
     item = ItemPage(page)
     item.addItemsToCart(items)
     cart = CartPage(page)
