@@ -106,3 +106,22 @@ allure open allure-report
 
 ## License
 MIT
+
+## Test Parameterization
+
+The end-to-end test automatically uses random values for:
+- Search item: Randomly selected from the ItemsSearchTerm enum (e.g., "frozen lego duplo", "shrek toys", "madagascar toys", "batman toys").
+- Maximum price: Random integer between 50 and 200 dollars.
+- Limit: Random integer between 3 and 8 for the number of items to add to cart.
+
+Each test run will use different parameters, making the test more robust and covering a wider range of scenarios.
+
+Example (from tests/test_e2e_items.py):
+```python
+search_term = random.choice(list(ItemsSearchTerm)).value
+max_price = random.randint(50, 200)
+limit = random.randint(3, 8)
+items, total_price = search.searchItemsByNameUnderPrice(search_term, max_price=max_price, limit=limit)
+```
+
+You can view the chosen parameters in the logs and Allure report for each test run.
