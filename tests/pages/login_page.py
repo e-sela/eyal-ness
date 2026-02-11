@@ -1,6 +1,6 @@
 
 from playwright.sync_api import Page
-from tests.urls import Urls
+from ..enums.urls import Urls
 from tests.utils.locator_util import LocatorUtil
 import allure
 

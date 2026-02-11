@@ -22,6 +22,9 @@ This project contains automated end-to-end tests for eBay using Playwright and p
 │   ├── utils/
 │   │   ├── locator_util.py
 │   │   ├── price_parser.py
+│   ├── enums/
+│   │   ├── items_search_term_enum.py
+│   │   ├── urls_enum.py
 │   ├── test_e2e_items.py
 │   ├── conftest.py
 │   ├── pytest.ini

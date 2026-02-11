@@ -1,6 +1,6 @@
 
 from playwright.sync_api import Page
-from ..urls import Urls
+from ..enums.urls import Urls
 from ..utils.price_parser import parsePrice
 import logging
 import allure

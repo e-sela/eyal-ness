@@ -1,5 +1,5 @@
 import random
-from .utils.lego_search_terms import ItemsSearchTerm
+from .enums.Items_search_terms import ItemsSearchTerm
 import os
 
 from playwright.sync_api import Page
